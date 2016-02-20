@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Mark Schiavoni's Portfolio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:200,100"
+    rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"><img alt=
+            "Frontend Web Developer Mark Schiavoni" class=
+            "img-responsive pull-left" src="img/Image_005.png"></div>
+
+            <div class="col-md-6 text-right text-uppercase">
+                <h1>Mark Schiavoni</h1>
+
+                <h4>Front-End Ninja</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12"><img alt=
+            "website design" class="img-responsive" src=
+            "img/Image_008.png"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div id="link"><img alt="user interface design" class=
+                "img-responsive" onmouseout="this.src='img/Image_004.jpg'"
+                onmouseover="this.src='img/Image_005.jpg'" src=
+                "img/Image_004.jpg"></div>
+            </div><!-- Modal -->
+
+            <div class="modal fade" id="myModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button class="close" data-dismiss="modal" type=
+                        "button"></button>
+
+                        <div class="modal-body">
+                            <iframe height="320" width="570"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+				<script>
+					$('#link').click(function () {
+					var src = 'http://www.youtube.com/v/SjC0VsB1ycg?rel=0&amp;autoplay=1';
+					$('#myModal').modal('show');
+					$('#myModal iframe').attr('src', src);
+					});
+
+					$('#myModal button').click(function () {
+					$('#myModal iframe').removeAttr('src');
+					});
+				</script>
+			</div>
+
+        <div class="row">
+            <h2>Featured Work</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <a href="http://proathlete360.com"><img alt="Pro Athlete 360"
+                class="img-responsive" onmouseout="this.src='img/Image1.jpg'"
+                onmouseover="this.src='img/Image1.gif'" src=
+                "img/Image1.jpg"></a> <a href="http://www.proathlete360.com">
+                <h3 class="text-uppercase text-center">Pro Athlete 360</h3></a>
+                <a href="http://proathlete360.com">
+                <p class="text-center">http://proathlete360.com</p></a>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <a href="https://youtu.be/fnWSwVkz0iQ"><img alt=
+                "Service & Sacrifice" class="img-responsive" onmouseout=
+                "this.src='img/Image2.jpg'" onmouseover=
+                "this.src='img/Image2.gif'" src="img/Image2.jpg"></a> <a href=
+                "https://youtu.be/fnWSwVkz0iQ">
+                <h3 class="text-uppercase text-center">Service &
+                Sacrifice</h3></a> <a href=
+                "https://www.youtube.com/user/CitadelClubGW/">
+                <p class="text-center">
+                https://youtube.com/user/CitadelClubGW/</p></a>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <a href="http://hfslawyers.com"><img alt="HFS Lawyers" class=
+                "img-responsive" onmouseout="this.src='img/Image3.jpg'"
+                onmouseover="this.src='img/Image3.gif'" src=
+                "img/Image3.jpg"></a> <a href="https://hfslawyers.com">
+                <h3 class="text-uppercase text-center">HFS Lawyers</h3></a>
+                <a href="https://hfslawyers.com">
+                <p class="text-center">https://hfslawyers.com</p></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
