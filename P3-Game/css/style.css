@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+	background-color: black;
+}
+.container {    
+	background-color: #ff9319;
+    width: 505px;
+    margin: auto;
+    color: black;
+    border-radius: 5px;
+	margin-bottom: -60px;
+}
+.h1 {
+	55px;
+}
